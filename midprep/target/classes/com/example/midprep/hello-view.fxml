@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:controller="com.example.midprep.HelloController" xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Label fx:id="totalKWhLabel" text="Total kWh Consumed:"/>
+    <TextField fx:id="totalKWhField" promptText="Enter total kWh"/>
+    <RadioButton fx:id="populationRadioButton" text="Population"/>
+    <RadioButton fx:id="highlandsRadioButton" text="Highlands"/>
+    <RadioButton fx:id="commercialRadioButton" text="Commercial"/>
+    <Button text="Calculate" onAction="#calculateCost"/>
+    <Label fx:id="resultLabel" text="Monthly Electric Cost: "/>
+</VBox>
